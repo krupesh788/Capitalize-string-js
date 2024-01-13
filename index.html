@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Enter value</h1>
-    <input type="text" name="" id="string1">
+    <div class="container">
 
-    <button onclick="cap()">Capitalize</button>
+        <h1>Enter value</h1>
+        <br>
+        <br>
 
-    <p id="p1"></p>
+        <input type="text" name="" id="string1">
+        
+        
+        <button class="btn" onclick="cap()">Capitalize</button>
 
+        <br>
+        <br>
+        
+        <p id="p1"></p>
+        
+    </div>
 
-    <script>
-        function cap(){
-
-
-            let string1 = document.getElementById("string1").value;
-
-            let string2  = string1[0].toUpperCase() + string1.slice(1);
-
-            document.getElementById("p1").innerHTML = `Capitalized String: ${string2}`;
-        }
-
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
